@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    width: 100vw;
+} */
+
+#img {
+    width: 100vw;
+    height: 32.3vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#allForm {
+    position: absolute;
+    margin-top: 13.7vh;
+    width: 80vw;
+    height: 67vh;
+    background: #1A1A1AD4 0% 0% no-repeat padding-box;
+}
+
+#formTitle {
+    margin-left: 20.5vw;
+    margin-right: 20.5vw;
+    margin-top: 6.3vh;
+    text-align: center;
+    font: normal normal 900 25px/30px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+
+
+#formP {
+    margin-left: 9.4vw;
+    margin-right: 9.4vw;
+    margin-top: 1.8vh;
+    text-align: center;
+    font: normal normal normal 15px/22px Heebo;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+
+#form {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3.4vh;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 14px/21px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+#label1 {
+    text-align: left;
+    font: normal normal bold 14px/21px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+#input1 {
+    width: 60vw;
+    height: 3vh;
+    margin-top: 0.3vh;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+}
+
+#label2 {
+    margin-top: 3.7vh;
+    text-align: left;
+    font: normal normal bold 14px/21px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+
+#input2 {
+    width: 60vw;
+    height: 3vh;
+    margin-top: 0.9vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+}
+
+
+#button {
+    width: 20.5vw;
+    height: 5vh;
+    margin-left: 10vw;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 15px/20px Heebo;
+    letter-spacing: 0.23px;
+    color: #FFFFFF;
+
+}
+
+
+/* ========================================================================================================================================================================================================================================================================== */
+/* Tablet */
+
+@media (min-width:768px) {
+
+    #formTitle {
+        font-size: 2.5rem;
+        margin-left: 12vw;
+        margin-right: 12vw;
+        margin-top: 10vh;
+    }
+
+
+    #formP {
+        font-size: 1.5rem;
+        margin-left: 9.4vw;
+        margin-right: 9.4vw;
+        margin-top: 6vh;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
+
+    #form {
+        margin-top: 6vh;
+    }
+
+    #label1 {
+        font-size: 1.5rem;
+    }
+
+    #label2,
+    #button {
+        margin-top: 3.7vh;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ========================================================================================================================================================================================================================================================================== */
+/* Desktop */
+
+@media (min-width:1024px) {
+
+
+    #img {
+        height: 50vh;
+    }
+
+    #allForm {
+        margin-right: 55vw;
+        margin-top: 14.5vh;
+        width: 30vw;
+        height: 70vh;
+    }
+
+    #formTitle {
+        font-size: 1.8rem;
+        margin-left: 4.16vw;
+        margin-right: 4.16vw;
+        margin-top: 6.9vh;
+    }
+
+
+    #formP {
+        font-size: 1rem;
+        margin-left: 4.16vw;
+        margin-right: 4.16vw;
+        margin-top: 2vh;
+        letter-spacing: 0px;
+    }
+
+
+    #form {
+        margin-left: 3.9vw;
+        margin-right: 3.9vw;
+        margin-top: 1.5vh;
+    }
+
+    #label1 {
+        font-size: 0.9rem;
+    }
+
+    #input1 {
+        width: 21.7vw;
+        height: 4.6vh;
+        margin-top: 0.3vh;
+    }
+
+    #label2 {
+        margin-top: 1.6vh;
+        font-size: 0.9rem;
+    }
+
+    #input2 {
+        width: 21.7vw;
+        height: 4.6vh;
+    }
+
+
+    #button {
+        margin-top: 3.19vh;
+        margin-left: 3.9vw;
+        width: 8.3vw;
+        height: 4.6vh;
+        font-size: 1rem;
+    }
+}

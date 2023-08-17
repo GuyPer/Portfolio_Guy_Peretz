@@ -1,0 +1,321 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* related to navbar */
+
+#hamburgerForMobile {
+    margin-left: 2vw;
+}
+
+#guyProfile {
+    display: flex;
+    align-items: center;
+    margin-right: 6vw;
+}
+
+#navbar {
+    width: 100vw;
+    height: 10vh;
+    font-family: 'Heebo';
+    font-weight: 400;
+    background-color: #ffffffc2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+
+#ulNavbar {
+    visibility: hidden;
+    position: absolute;
+    /* background-color: #fff; */
+    padding: 2vw;
+    list-style: none;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Show the navbar when the container is hovered */
+#hamburgerForMobile:hover+#ulNavbar {
+    visibility: visible;
+    color: #1AE0EC;
+    background-color: #fff;
+}
+
+
+#myName {
+    font-size: 1rem;
+    margin-left: 2vw;
+    font-family: 'Luxurious Roman';
+}
+
+
+
+.liNavbar {
+    /* list-style-type: none; */
+    width: 96vw;
+    border-bottom: 1px solid #c6b6b6;
+}
+
+.aNavbar {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+#myImage {
+    width: 7vw;
+    height: 3vh;
+    border-radius: 70px;
+}
+
+.liNavbar:hover .aNavbar {
+    color: #1AE0EC;
+    font-weight: 700;
+}
+
+/* End of navbar */
+
+#divHeader {
+    width: 100vw;
+    height: 40vh;
+    font-family: 'Heebo';
+    background-color: #13E8F163;
+    /* grid-template-rows: 1fr 3fr; */
+    text-align: center;
+    align-items: center;
+}
+
+#h1Header {
+    padding-top: 10vh;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #3A3A3A;
+}
+
+#pHeader {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 5vh;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+#headerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.buttonsToProject {
+    height: 5vh;
+    background-color: #1AE0EC;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    border-radius: 15px;
+    border: none;
+}
+
+
+#idLogos {
+    /* margin-bottom: 0.4vh; */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+
+
+.logos {
+    width: 11vw;
+    height: 8vh;
+}
+
+/* projectImage zone */
+#projectImage {
+    width: 100vw;
+    height: 40vh;
+    background-color: #EBFEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aButtons {
+    text-decoration: none;
+}
+
+
+.imagesOfProject {
+    width: 80vw;
+    height: 25vh;
+}
+
+/* ======================================================================================================================================================================================================================================================================================================= */
+
+
+/* tablet size */
+@media (min-width:768px) {
+
+    #hamburgerForMobile {
+        display: none;
+    }
+
+    #ulNavbar {
+        margin-left: 5vw;
+        visibility: visible;
+    }
+
+    #navbarContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .buttonsToProject {
+        font-size: 1.12rem;
+        width: 35vw;
+        height: 7vh;
+        border-radius: 25px;
+    }
+
+    #h1Header {
+        font-size: 2rem;
+    }
+
+    #pHeader {
+        font-size: 1.3em;
+    }
+
+    #myName {
+        font-size: 1.2rem;
+    }
+
+    .aNavbar {
+        font-size: 1.2rem;
+    }
+
+
+    #myImage {
+        width: 8vw;
+        height: 6vh;
+        border-radius: 100px;
+    }
+
+    .aNavbar {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .liNavbar {
+        width: 100vw;
+        border: none;
+    }
+
+
+    #guyProfile {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .logos {
+        width: 12vw;
+        height: 12vh;
+    }
+
+
+}
+
+/* ========================================================================================================================================================================================================================================================================================================================================================================================================================================================================== */
+
+/* Desktop size */
+
+@media (min-width:1024px) {
+
+    #headerButtons {
+        gap: 2.5vw;
+    }
+
+    #divHeader {
+        height: 45vh;
+    }
+
+    .buttonsToProject {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        width: 25vw;
+        border-radius: 45px;
+    }
+
+    #h1Header {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .aNavbar {
+        font-size: 1.5rem;
+    }
+
+    #myName {
+        font-size: 1.7rem;
+    }
+
+    #pHeader {
+        font-size: 1.5rem;
+        margin-top: 1vh;
+    }
+
+    #myBigImage {
+        width: 15vw;
+        height: 28vh;
+    }
+
+    #myImage {
+        width: 4vw;
+        height: 6vh;
+    }
+
+    .logos {
+        width: 5vw;
+        height: 11vh;
+    }
+
+    #image1 {
+        overflow: hidden;
+    }
+
+    .imagesOfProject {
+        width: 52vw;
+        height: 30vh;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+    }
+
+    .imagesOfProject:hover {
+        transform: scale(1.1);
+    }
+
+}

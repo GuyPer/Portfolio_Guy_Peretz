@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    top: 0px;
+    left: 0px;
+    width: 370px;
+    height: 658px;
+    /* UI Properties */
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 100vh;
+}
+
+#h1 {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 21px;
+    width: 328px;
+    height: 93px;
+    text-align: center;
+    font: normal normal normal 60px/86px 'Satisfy';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    opacity: 1;
+}
+
+#p1 {
+    position: absolute;
+    top: 203px;
+    left: 36px;
+    width: 298px;
+    height: 22px;
+    text-align: center;
+    font: normal normal normal 18px/22px 'Varela Round';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#p2 {
+    position: absolute;
+    top: 245px;
+    left: 31px;
+    width: 318px;
+    height: 120px;
+    text-align: center;
+    font: normal normal normal 16px/20px 'Varela Round';
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+#label1 {
+    position: absolute;
+    top: 388px;
+    left: 322px;
+    width: 16px;
+    height: 13px;
+    text-align: center;
+    font: normal normal normal 10px/12px 'Varela Round';
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+#input1 {
+    position: absolute;
+    top: 404px;
+    left: 38px;
+    width: 302px;
+    height: 36px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+}
+
+#label2 {
+    position: absolute;
+    top: 454px;
+    left: 312px;
+    width: 24px;
+    height: 12px;
+    text-align: center;
+    font: normal normal normal 10px/12px 'Varela Round';
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+#input2 {
+    position: absolute;
+    top: 470px;
+    left: 38px;
+    width: 302px;
+    height: 36px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+}
+
+#button {
+    position: absolute;
+    top: 523px;
+    left: 39px;
+    width: 300px;
+    height: 33px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+    color: blue;
+}
+
+/* ============================================================================================================================================================================================================================ */
+
+/* for tablet */
+@media (min-width:768px) {
+
+    #body {
+        width: 100vw;
+    }
+
+    #myContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #h1,
+    #p1,
+    #p2,
+    #form,
+    #label1,
+    #label2,
+    #input1,
+    #input2,
+    #button {
+        position: static;
+        width: 80vw;
+    }
+
+    #myContent {
+        height: 90vh;
+    }
+
+    #h1 {
+        margin-bottom: 30px;
+    }
+
+    #label1,
+    #label2,
+    #input1,
+    #input2,
+    #button {
+        margin-bottom: 8px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #label1,
+    #label2 {
+        text-align: right;
+    }
+
+
+    /* #myContent {
+        grid-row: 2/5;
+        grid-column: 2/5;
+    } */
+
+}
+
+/* ======================================================================================================================================================================================================================================================================================================= */
+
+/* for desktop  -->  width: 1920px;  height: 1086px;*/
+@media (min-width:1920px) {
+
+    #h1,
+    #p1,
+    #p2,
+    #label1,
+    #label2,
+    #input1,
+    #input2,
+    #button {
+        position: static;
+        margin: 0;
+    }
+
+    #body {
+        width: 1920px;
+        height: 1086px;
+    }
+
+    #h1 {
+        position: absolute;
+        top: 337px;
+        left: 582px;
+        width: 755px;
+        height: 204px;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal normal 160px/231px 'Satisfy';
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 36px #00000087;
+        opacity: 1;
+    }
+
+    #p1 {
+        position: absolute;
+        top: 551px;
+        left: 695px;
+        width: 570px;
+        height: 38px;
+        text-align: right;
+        font: normal normal normal 32px/38px Varela Round;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    #p2 {
+        position: absolute;
+        top: 607px;
+        left: 446px;
+        width: 1028px;
+        height: 60px;
+        text-align: center;
+        font: normal normal normal 16px/20px Varela Round;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+        opacity: 1;
+    }
+
+    #label1 {
+        position: absolute;
+        top: 671px;
+        left: 1486px;
+        width: 24px;
+        height: 20px;
+        text-align: center;
+        font: normal normal normal 16px/20px Varela Round;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+        opacity: 1;
+    }
+
+    #input1 {
+        position: absolute;
+        top: 694px;
+        left: 1092px;
+        width: 418px;
+        height: 50px;
+        background: #F6F6F624 0% 0% no-repeat padding-box;
+        border: 2px solid #FFFFFF;
+        opacity: 1;
+    }
+
+    #label2 {
+        position: absolute;
+        top: 671px;
+        left: 1017px;
+        width: 38px;
+        height: 20px;
+        text-align: center;
+        font: normal normal normal 16px/20px Varela Round;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+        opacity: 1;
+    }
+
+    #input2 {
+        position: absolute;
+        top: 693px;
+        left: 637px;
+        width: 418px;
+        height: 50px;
+        background: #F6F6F624 0% 0% no-repeat padding-box;
+        border: 2px solid #FFFFFF;
+        opacity: 1;
+    }
+
+    #button {
+        position: absolute;
+        top: 692px;
+        left: 410px;
+        width: 206px;
+        height: 50px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+}

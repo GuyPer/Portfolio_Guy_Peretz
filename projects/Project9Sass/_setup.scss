@@ -1,0 +1,33 @@
+// Fonts
+
+$fontColor: #10012fd7;
+$fontFamily: sans-serif;
+$fontWeightMobiles: 700;
+$fontSizeH1Mobile: 1.8rem;
+$fontSizePmobile: 1rem;
+$fontSizeBtnMobile: 1rem;
+
+
+// for TABLET:
+
+@mixin tablet {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+
+$h1fontSizeTablet: 3rem;
+$pAndLabelsfontSizeTablet: 1.7rem;
+$inputHeightTablet: 3vh;
+
+
+// for DESKTOP:
+@mixin desktop {
+    @media (min-width:992px) {
+        @content;
+    }
+}
+
+$h1fontSizeDesktop: 2.3rem;
+$pAndLabelsfontSizeDesktop: 1.3rem;
+$inputHeightDesktop: 5vh;

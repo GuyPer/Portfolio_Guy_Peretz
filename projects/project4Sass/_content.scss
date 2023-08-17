@@ -1,0 +1,133 @@
+#imgOfProj {
+    width: 100vw;
+    height: $imageHightMobile;
+}
+
+#formProj {
+    margin-top: $formMarginTopMobile;
+}
+
+#labelName,
+#inputName,
+#labelEmail,
+#inputEmail,
+#sendButton {
+    width: $inputWidthMobile;
+    margin-left: $formMarginLeftRightMobile;
+    margin-right: $formMarginLeftRightMobile;
+    font-weight: $fontWeight;
+    font-family: $fontFamily;
+    color: $labelColor;
+}
+
+#inputName {
+    margin-bottom: $formElementsMarginTopMobile;
+}
+
+#inputName,
+#inputEmail {
+    background-color: $inputColor;
+    border: none;
+    border-bottom: 3px solid $buttonColor;
+    height: $inputHeightMobile;
+
+}
+
+#sendButton {
+    background-color: $buttonColor;
+    margin-top: $formElementsMarginTopMobile;
+    border: none;
+    height: $inputHeightMobile;
+}
+
+.labels {
+    display: flex;
+    text-align: right;
+    // margin-left: 77.2vw;
+}
+
+// Tablet + Desktop
+
+.labels,
+#sendButton {
+    @include tablet {
+        font-size: 1.5rem;
+    }
+
+
+    @include desktop {
+        font-size: 1.2rem;
+    }
+}
+
+#imgOfProj {
+    @include desktop {
+        height: $imgHieghtDesktop;
+    }
+}
+
+#area1,
+#area2 {
+    @include desktop {
+        width: $inputWidthDesktop;
+    }
+}
+
+#area2 {
+    @include desktop {
+        margin-right: 2vw;
+    }
+}
+
+#sendButton {
+    @include desktop {
+        width: $buttonWidthDesktop;
+        height: $inputHeightDesktop;
+
+    }
+}
+
+
+#area3 {
+    @include desktop {
+        width: $buttonWidthDesktop;
+        margin-right: 3.7vw;
+    }
+}
+
+#inputName,
+#inputEmail {
+    @include desktop {
+        width: $inputWidthDesktop;
+    }
+}
+
+#area1 {
+    @include desktop {
+        margin-right: $marginRightArea1Destkop ;
+    }
+}
+
+#labelName,
+#labelEmail {
+    @include desktop {
+        margin-right: -11vw;
+    }
+}
+
+#formProj {
+    @include desktop {
+        // width: 100vw;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: $marginTopFormDesktop;
+    }
+}
+
+
+#inputName {
+    @include desktop {
+        margin-bottom: 0;
+    }
+}

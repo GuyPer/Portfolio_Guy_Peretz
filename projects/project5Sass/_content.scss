@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: $bodyBackground;
+}
+
+// MOBILE
+
+// firstBlock
+
+#firstBlock {
+    background-color: $firstBlockBackgrondColor;
+    height: $firstBlockHeightMobile;
+    width: $firstBlockWidthMobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#h1firstBlock {
+    color: $h1firstBlockColor;
+    font-size: $h1FontSizeMobile;
+    padding-left: $paddingH1AndPForMobile;
+    padding-right: $paddingH1AndPForMobile;
+    margin-bottom: 2vh;
+}
+
+#pFirstBlock {
+    color: $pFirstBlockMobileColor;
+    font-size: $pFontSizeMobile;
+    padding-left: $paddingH1AndPForMobile;
+    padding-right: $paddingH1AndPForMobile;
+    text-align: center;
+}
+
+// images
+
+#firstGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2vw;
+    margin: 5vw;
+}
+
+#secondGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+    margin: 5vw;
+}
+
+.images {
+    width: $imagesWidthMobile;
+}
+
+// second block
+
+#firstLabel {
+    margin-top: $firstFormLabelMarginTopMobile;
+}
+
+#formBlock {
+    height: $formHeightMobile;
+    background-color: $formBlockColor;
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#galleryForm {
+    margin-left: 7vw;
+}
+
+
+#h1Form {
+    color: $formTitleColor;
+    font-size: $formH1FontSizeMobile;
+    font-weight: $formH1fontWeightMobile;
+    margin-left: $paddingH1AndPForMobile;
+    margin-right: $paddingH1AndPForMobile;
+    text-align: left;
+}
+
+#pForm {
+    color: $formPcolor;
+    font-size: $formPfontSizeMobile;
+    font-weight: $formpandInputsfontWeightMobile;
+    margin-top: $formMarginTopPmobile;
+    margin-left: $paddingH1AndPForMobile;
+    margin-right: $paddingH1AndPForMobile;
+    text-align: left;
+}
+
+
+#fullNameLabel,
+#emailLabel,
+#experienceLabel {
+    color: $formInputAndButtonsBackgroundColor;
+    font-size: 0.9rem;
+}
+
+#fullNameInput,
+#emailInput {
+    border-bottom: 0.5vh solid $formInputAndButtonsBackgroundColor;
+    height: $formInputAndButtonHeightMobile;
+    width: $formInputAndButtonWidthMobile;
+    background-color: $formInputColor;
+}
+
+
+#experienceInput {
+    border-bottom: 0.5vh solid $formInputAndButtonsBackgroundColor;
+    height: $formBigInputAndButtonHeightMobile;
+    width: $formInputAndButtonWidthMobile;
+    background-color: $formInputColor;
+}
+
+#formButton {
+    background-color: $formInputAndButtonsBackgroundColor;
+    width: $formInputAndButtonWidthMobile;
+    height: $formInputAndButtonHeightMobile;
+    color: $buttonColor;
+    font-weight: 700;
+}
+
+.formLabels {
+    display: flex;
+    text-align: left;
+}
+
+.formInputs {
+    margin-top: $inputMarginTopMobile;
+    margin-bottom: $inpugMarginBottomMobile;
+}
+
+// TABLET
+
+@include tablet {
+
+    #h1firstBlock,
+    #h1Form {
+        font-size: $H1sizesTablet;
+    }
+
+    #pFirstBlock,
+    #pForm {
+        font-size: $pSizesTablet;
+    }
+
+    #experienceLabel,
+    #fullNameLabel,
+    #emailLabel,
+    #formButton {
+        font-size: $labelsAndButtonFontSizeTablet;
+    }
+}
+
+// DESKTOP
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@include desktop {
+
+    #firstGallery,
+    #secondGallery {
+        display: block;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container {
+        background-color: #fff;
+        width: 90vw;
+    }
+
+    #firstBlock {
+        margin-left: 5vw;
+        margin-top: 10vw;
+        width: $firstBlockWidthDesktop ;
+        height: $firstBlockHeightDesktop;
+    }
+
+    .images {
+        width: $imagesWidhtDesktop;
+        height: $imagesHeighDesktop;
+    }
+
+    #formBlock {
+        width: $formBlockWidthDesktop ;
+        height: $formBlockHeightDesktop;
+    }
+
+    #h1firstBlock,
+    #h1Form {
+        font-size: $titlesSizeDesktop;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    #pFirstBlock,
+    #pForm {
+        font-size: $pSizeDesktop;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    #experienceLabel,
+    #fullNameLabel,
+    #emailLabel,
+    #formButton {
+        font-size: $labelsAndButtonFontSizeDesktop;
+    }
+
+    #fullNameInput,
+    #emailInput,
+    #experienceInput,
+    #formButton {
+        width: $inputAndButtonWidthDesktop;
+    }
+
+    #galleryForm {
+        margin-left: 3vw;
+    }
+}

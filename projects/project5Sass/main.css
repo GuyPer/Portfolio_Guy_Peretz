@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #E5EEFF;
+}
+
+#firstBlock {
+  background-color: #020253;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#h1firstBlock {
+  color: #0EE1DA;
+  font-size: 2.2rem;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  margin-bottom: 2vh;
+}
+
+#pFirstBlock {
+  color: #F9F9F9;
+  font-size: 1.3rem;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  text-align: center;
+}
+
+#firstGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2vw;
+  margin: 5vw;
+}
+
+#secondGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2vw;
+  margin: 5vw;
+}
+
+.images {
+  width: 43vw;
+}
+
+#firstLabel {
+  margin-top: 4.5vh;
+}
+
+#formBlock {
+  height: 80vh;
+  background-color: #8E097C;
+  margin: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#galleryForm {
+  margin-left: 7vw;
+}
+
+#h1Form {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  text-align: left;
+}
+
+#pForm {
+  color: #F9F9F9;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-top: 2.1vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  text-align: left;
+}
+
+#fullNameLabel,
+#emailLabel,
+#experienceLabel {
+  color: #0EE1DA;
+  font-size: 0.9rem;
+}
+
+#fullNameInput,
+#emailInput {
+  border-bottom: 0.5vh solid #0EE1DA;
+  height: 5vh;
+  width: 75vw;
+  background-color: #E5EEFF;
+}
+
+#experienceInput {
+  border-bottom: 0.5vh solid #0EE1DA;
+  height: 14.3vh;
+  width: 75vw;
+  background-color: #E5EEFF;
+}
+
+#formButton {
+  background-color: #0EE1DA;
+  width: 75vw;
+  height: 5vh;
+  color: #011560;
+  font-weight: 700;
+}
+
+.formLabels {
+  display: flex;
+  text-align: left;
+}
+
+.formInputs {
+  margin-top: 0.8vh;
+  margin-bottom: 2.5vh;
+}
+
+@media (min-width: 768px) {
+
+  #h1firstBlock,
+  #h1Form {
+    font-size: 3rem;
+  }
+
+  #pFirstBlock,
+  #pForm {
+    font-size: 1.5rem;
+  }
+
+  #experienceLabel,
+  #fullNameLabel,
+  #emailLabel,
+  #formButton {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  #firstGallery,
+  #secondGallery {
+    display: block;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container {
+    background-color: #fff;
+    width: 90vw;
+  }
+
+  #firstBlock {
+    margin-left: 5vw;
+    margin-top: 10vw;
+    width: 32vw;
+    height: 52vh;
+  }
+
+  .images {
+    width: 15.5vw;
+    height: 25vh;
+  }
+
+  #formBlock {
+    width: 32vw;
+    height: 100vh;
+  }
+
+  #h1firstBlock,
+  #h1Form {
+    font-size: 1.5rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #pFirstBlock,
+  #pForm {
+    font-size: 1.2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #h1firstBlock,
+  #pFirstBlock {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #experienceLabel,
+  #fullNameLabel,
+  #emailLabel,
+  #formButton {
+    font-size: 0.8rem;
+  }
+
+  #fullNameInput,
+  #emailInput,
+  #experienceInput,
+  #formButton {
+    width: 26vw;
+  }
+
+  #galleryForm {
+    margin-left: 3vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

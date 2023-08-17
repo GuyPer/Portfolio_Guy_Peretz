@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com");
+@import url("https: //fonts.gstatic.com");
+@import url("https: //fonts.googleapis.com/css2?family=Courgette&family=Heebo:wght@400;700&family=Luxurious+Roman&family=Nunito:ital,wght@1,1000&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$inputColor: #E5EEFF;
+$labelColor: #011560;
+$buttonColor: #D3E10E;
+$fontFamily: Heebo;
+$fontWeight: 700;
+
+// for MOBILE:
+@mixin mobile {
+    @media (min-width:576px) {
+        @content
+    }
+}
+
+$imageHightMobile: 50vh;
+$inputWidthMobile: 77.2vw;
+$inputHeightMobile: 5.2vh;
+$formMarginTopMobile: 12.34vh;
+$formMarginLeftRightMobile: 11.35vw;
+$formElementsMarginTopMobile: 2vh;
+
+// for TABLET:
+@mixin tablet {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+
+// for Desktop
+$marginRightArea1Destkop: 21.35vw;
+$inputColorDesktop: #F6F6F6;
+$imgHieghtDesktop: 68.77vh;
+$inputWidthDesktop: 21.74vw;
+$inputHeightDesktop: 4.63vh;
+$buttonWidthDesktop: 8.6vw;
+$marginTopFormDesktop: 7.7vh;
+
+@mixin desktop {
+    @media (min-width:992px) {
+        @content;
+    }
+}

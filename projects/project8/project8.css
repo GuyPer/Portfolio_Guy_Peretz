@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Parquet.jpg);
+
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffffd0;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    margin-top: 10vh;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+#paragraph {
+    margin-top: 5vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#title,
+#paragraph {
+    text-align: center;
+    justify-content: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    -webkit-text-stroke: 1.4px rgb(14, 13, 13);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffffd0;
+}
+
+.labels {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 4vh;
+    -webkit-text-stroke: 1.2px rgb(14, 13, 13);
+}
+
+.inputs {
+    width: 80vw;
+}
+
+#btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 5vh;
+    height: 4vh;
+    background-color: rgb(105, 60, 60);
+    color: aliceblue;
+    -webkit-text-stroke: 0.5px rgb(14, 13, 13);
+}
+
+/* TABLET */
+
+/* ============================================================================================================================================================================================================================================================================================================================================================================== */
+
+@media (min-width:768px) {
+
+    #title {
+        margin-top: 10vh;
+        font-size: 3.3rem;
+    }
+
+    #paragraph,
+    .labels {
+        margin-top: 5vh;
+        font-size: 2.2rem;
+    }
+
+    .inputs {
+        height: 4vh;
+    }
+
+    #btn {
+        font-size: 1.8rem;
+        margin-top: 7vh;
+        height: 5vh;
+
+    }
+
+}
+
+/* DESKTOP */
+
+/* ==============================================================================================================================================================================================================================================================================================================================================================================*/
+
+
+@media (min-width:992px) {
+
+
+    #title {
+        margin-top: 10vh;
+        font-size: 2.7rem;
+    }
+
+    #paragraph {
+        margin-top: 5vh;
+        font-size: 1.8rem;
+    }
+
+    .labels {
+        font-size: 1.8rem;
+        margin-top: 4vh;
+    }
+
+    .inputs {
+        height: 5vh;
+        width: 60vw;
+    }
+
+    #btn {
+        font-size: 1.8rem;
+        margin-top: 7vh;
+        height: 8vh;
+        width: 20vw;
+    }
+
+}

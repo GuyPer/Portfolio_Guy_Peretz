@@ -1,0 +1,93 @@
+// ----------- FOR MOBILE -------------
+
+// for MOBILE:
+@mixin mobile {
+    @media (min-width:576px) {
+        @content
+    }
+}
+
+$bodyBackground: #E5EEFF;
+
+// firstBlock
+$firstBlockHeightMobile: 40vh;
+$firstBlockWidthMobile: 100vw;
+$firstBlockBackgrondColor: #020253;
+
+// h1firstBlock
+$h1firstBlockColor: #0EE1DA;
+$h1FontSizeMobile: 2.2rem;
+$paddingH1AndPForMobile: 8vw;
+
+
+//pFirstBlock
+$pFirstBlockMobileColor: #F9F9F9;
+$pFontSizeMobile: 1.3rem;
+
+// IMAGES
+$imagesWidthMobile: 43vw;
+$imagesHeightMobile: 22vh;
+
+// Second Block (form block)
+$formBlockColor: #8E097C;
+$formTitleColor: #FFFFFF;
+// $formMarginTopTitleMobile: 8.7vh;
+$formPcolor: #F9F9F9;
+$formInputAndButtonsBackgroundColor: #0EE1DA;
+$buttonColor: #011560;
+$formInputColor: #E5EEFF;
+$formMarginTopPmobile: 2.1vh;
+$formHeightMobile: 80vh;
+$formH1FontSizeMobile: 1.5rem;
+$formH1fontWeightMobile: 600;
+$formpandInputsfontWeightMobile: 100;
+$formPfontSizeMobile: 1.2rem;
+$formInputAndButtonHeightMobile: 5vh;
+$formInputAndButtonWidthMobile: 75vw;
+$formBigInputAndButtonHeightMobile: 14.3vh;
+$firstFormLabelMarginTopMobile: 4.5vh;
+$inputMarginTopMobile: 0.8vh;
+$inpugMarginBottomMobile: 2.5vh;
+
+
+// ----------- FOR Tablet -------------
+
+// for TABLET:
+@mixin tablet {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+
+$H1sizesTablet: 3rem;
+$pSizesTablet: 1.5rem;
+$labelsAndButtonFontSizeTablet: 1.2rem;
+// ----------- FOR DESKTOP -------------
+
+// for DESKTOP:
+@mixin desktop {
+    @media (min-width:992px) {
+        @content;
+    }
+}
+
+// first and form sizes
+
+$firstBlockWidthDesktop: 32vw;
+$firstBlockHeightDesktop: 52vh;
+$formBlockWidthDesktop: 32vw;
+$formBlockHeightDesktop: 100vh;
+
+// images sizes
+
+$imagesWidhtDesktop: 15.5vw;
+$imagesHeighDesktop: 25vh;
+
+// font sizes
+$titlesSizeDesktop: 1.5rem;
+$pSizeDesktop: 1.2rem;
+$labelsAndButtonFontSizeDesktop: 0.8rem;
+
+// input and botton sizes
+
+$inputAndButtonWidthDesktop: 26vw;

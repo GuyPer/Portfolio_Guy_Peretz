@@ -1,0 +1,123 @@
+// =========================================================================================================================================================Mobile
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./attraction.jpg);
+    background-size: cover;
+}
+
+#container {
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-weight: $fontWeightMobiles;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    padding-top: 3vh;
+}
+
+#h1 {
+    font-size: $fontSizeH1Mobile;
+}
+
+#p {
+    font-size: $fontSizePmobile;
+    margin-top: 3vh;
+}
+
+form {
+    width: 80vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.labels {
+    margin-top: 1vh;
+}
+
+#btn {
+    height: 4vh;
+    width: 30vw;
+    margin-top: 3vh;
+    background-color: $fontColor;
+    color: azure;
+    font-size: $fontSizeBtnMobile;
+}
+
+
+
+// =============================================================================================================================================================================================== Tablet
+
+@include tablet {
+
+    #h1 {
+        font-size: $h1fontSizeTablet;
+    }
+
+    #p,
+    .labels,
+    #btn {
+        font-size: $pAndLabelsfontSizeTablet;
+    }
+
+    .inputs {
+        height: $inputHeightTablet;
+    }
+
+}
+
+// =============================================================================================================================================================================================== Desktop
+
+@include desktop {
+    body {
+        background: url(./attraction.jpg)no-repeat center;
+        background-size: cover;
+    }
+
+    #h1 {
+        font-size: $h1fontSizeDesktop;
+    }
+
+    #p {
+        text-align: center;
+        width: 90vw;
+        font-size: $pAndLabelsfontSizeDesktop;
+    }
+
+    .labels {
+        width: 60vw;
+        font-size: $pAndLabelsfontSizeDesktop;
+    }
+
+    #form {
+        align-items: center;
+    }
+
+    .inputs {
+        text-align: left;
+        width: 60vw;
+        height: $inputHeightDesktop;
+    }
+
+    #btn {
+        height: $inputHeightDesktop;
+        display: block;
+        height: 7vh;
+        width: 15vw;
+        margin-right: 45vw;
+    }
+}

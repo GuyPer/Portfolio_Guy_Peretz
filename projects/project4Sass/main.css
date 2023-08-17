@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com");
+@import url("https: //fonts.gstatic.com");
+@import url("https: //fonts.googleapis.com/css2?family=Courgette&family=Heebo:wght@400;700&family=Luxurious+Roman&family=Nunito:ital,wght@1,1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#imgOfProj {
+  width: 100vw;
+  height: 50vh;
+}
+
+#formProj {
+  margin-top: 12.34vh;
+}
+
+#labelName,
+#inputName,
+#labelEmail,
+#inputEmail,
+#sendButton {
+  width: 77.2vw;
+  margin-left: 11.35vw;
+  margin-right: 11.35vw;
+  font-weight: 700;
+  font-family: Heebo;
+  color: #011560;
+}
+
+#inputName {
+  margin-bottom: 2vh;
+}
+
+#inputName,
+#inputEmail {
+  background-color: #E5EEFF;
+  border: none;
+  border-bottom: 3px solid #D3E10E;
+  height: 5.2vh;
+}
+
+#sendButton {
+  background-color: #D3E10E;
+  margin-top: 2vh;
+  border: none;
+  height: 5.2vh;
+}
+
+.labels {
+  display: flex;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .labels,
+  #sendButton {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .labels,
+  #sendButton {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #imgOfProj {
+    height: 68.77vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #area1,
+  #area2 {
+    width: 21.74vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #area2 {
+    margin-right: 2vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #sendButton {
+    width: 8.6vw;
+    height: 4.63vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #area3 {
+    width: 8.6vw;
+    margin-right: 3.7vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #inputName,
+  #inputEmail {
+    width: 21.74vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #area1 {
+    margin-right: 21.35vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #labelName,
+  #labelEmail {
+    margin-right: -11vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #formProj {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 7.7vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #inputName {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

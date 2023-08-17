@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+#backgroundImage {
+    width: 100vw;
+    height: 33.33vh;
+    background: transparent url('img/Coffee.png') 0% 0% no-repeat padding-box;
+}
+
+#h1ofproj {
+    margin-left: 11.6vw;
+    margin-right: 11.6vw;
+    margin-top: 4.17vh;
+    text-align: left;
+    font: normal normal 900 28px/41px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+    opacity: 1;
+}
+
+#pOfProj {
+    margin-left: 11.6vw;
+    margin-right: 11.6vw;
+    margin-top: 2.57vh;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 15px/22px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+    opacity: 1;
+}
+
+#form {
+    margin-left: 11.6vw;
+    margin-right: 11.6vw;
+    margin-top: 2.7vh;
+    width: 77.3vw;
+}
+
+
+#label1 {
+    text-align: left;
+    font: normal normal bold 10px/14px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+}
+
+#input1,
+#input2 {
+    width: 77.3vw;
+    height: 5.2vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+    border-bottom: 2px solid #020253;
+}
+
+
+
+#label2 {
+    margin-top: 2.5vh;
+    text-align: left;
+    font: normal normal bold 10px/14px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+}
+
+
+
+#button {
+    margin-left: 11.6vw;
+    margin-right: 11.6vw;
+    margin-top: 3vh;
+    width: 77.3vw;
+    height: 5.2vh;
+    background: #020253 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 14px/19px Heebo;
+    letter-spacing: 0.21px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+/* ========================================================================================================================================================================================================================================================================== */
+/* Tablet */
+
+@media (min-width:768px) {
+
+    #backgroundImage {
+        height: 37vh;
+    }
+
+    #h1ofproj {
+        font-size: 2.5rem;
+        margin-top: 5.17vh;
+    }
+
+    #pOfProj {
+        margin-left: 11.6vw;
+        margin-right: 11.6vw;
+        margin-top: 2.57vh;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: normal;
+
+    }
+
+    #form {
+        margin-left: 11.6vw;
+        margin-right: 11.6vw;
+        margin-top: 2.7vh;
+        width: 77.3vw;
+    }
+
+
+    #label1,
+    #label2,
+    #button {
+        font-size: 1.2rem;
+    }
+
+    #label1,
+    #label2 {
+        line-height: normal;
+    }
+
+    #input1,
+    #input2 {
+        width: 77.3vw;
+        height: 5.2vh;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border-bottom: 3px solid #020253;
+    }
+}
+
+
+/* ========================================================================================================================================================================================================================================================================== */
+/* Desktop */
+
+@media (min-width:1024px) {
+
+    #backgroundImage {
+        position: absolute;
+        margin-top: 0vh;
+        margin-right: 0vw;
+        height: 100vh;
+        width: 56.5vw;
+        margin-left: 43.489vw;
+    }
+
+    #content {
+        position: absolute;
+        width: 43.5vw;
+        margin-top: 5vh;
+    }
+
+    #h1ofproj {
+        font-size: 2.3rem;
+        margin-top: 10vh;
+        margin-left: 10.8vw;
+        margin-right: 13.8vw;
+
+    }
+
+    #pOfProj {
+        font-size: 1.2rem;
+        margin-left: 10.8vw;
+        margin-right: 10.8vw;
+        margin-top: 2.1vh;
+    }
+
+    #form {
+        margin-left: 10.8vw;
+        margin-right: 10.8vw;
+        margin-top: 2.2vh;
+        width: 21.7vw;
+    }
+
+
+    #label1,
+    #label2,
+    #button {
+        font-size: 1.2rem;
+
+    }
+
+    #label1,
+    #label2 {
+        line-height: normal;
+    }
+
+    #input1,
+    #input2 {
+        width: 21.75vw;
+        height: 4.6vh;
+    }
+
+    #button {
+        width: 8.6vw;
+        height: 4.62vh;
+        margin-left: 10.8vw;
+    }
+}
