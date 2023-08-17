@@ -1,0 +1,653 @@
+html {
+    scroll-behavior: smooth;
+    /* width: 100vw; */
+}
+
+* {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    /* height: 200vh; */
+    /* overflow: hidden; */
+}
+
+/* Start of General */
+
+#main,
+#header,
+#footer {
+    width: 100vw;
+    font-family: 'Heebo';
+    padding: 6vw;
+    background-color: #13E8F163;
+    text-align: center;
+    align-items: center;
+}
+
+#hamburgerForMobile {
+    margin-left: 2vw;
+}
+
+#h1Header,
+#mainH1,
+#h1gallery,
+#h1Footer {
+    font-size: 1.5rem;
+}
+
+#h3gallery,
+#h3Footer {
+    font-size: 1.2rem;
+}
+
+#h1gallery {
+    margin-top: 7vh;
+}
+
+#h3gallery {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+/* Finish of General */
+
+/* Start Navbar */
+
+
+#guyProfile {
+    display: flex;
+    align-items: center;
+    margin-right: 6vw;
+}
+
+#navbar {
+    width: 100vw;
+    font-family: 'Heebo';
+    font-weight: 400;
+    background-color: #ffffffc2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+
+#ulNavbar {
+    visibility: hidden;
+    position: absolute;
+    /* background-color: #fff; */
+    padding: 2vw;
+    list-style: none;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Show the navbar when the container is hovered */
+#hamburgerForMobile:hover+#ulNavbar {
+    visibility: visible;
+    color: #1AE0EC;
+    background-color: #fff;
+}
+
+
+#myName {
+    font-size: 1rem;
+    margin-left: 2vw;
+    font-family: 'Luxurious Roman';
+}
+
+.liNavbar {
+    /* list-style-type: none; */
+    width: 96vw;
+    border-bottom: 1px solid #c6b6b6;
+}
+
+.aNavbar {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+#myImage {
+    width: 7vw;
+    height: 3vh;
+    border-radius: 70px;
+}
+
+.liNavbar:hover .aNavbar {
+    color: #1AE0EC;
+    font-weight: 700;
+}
+
+/* End of navbar */
+
+
+/* start of logos */
+
+#idLogos {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.logos {
+    width: 12vw;
+    height: 10vh;
+}
+
+/* end of logos */
+
+/* Start the main */
+#mainH1 {
+    margin: 4vw;
+}
+
+#myBigImage {
+    width: 25vw;
+    height: 15%;
+    border-radius: 200px;
+}
+
+#main {
+    background-color: #9192992b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cvButton {
+    font-size: 1.13rem;
+    width: 55vw;
+    height: 5vh;
+    margin-top: 6vh;
+    font-family: 'Heebo';
+    font-weight: 550;
+    background-color: #d0d3d3;
+    border: none;
+    border-radius: 15px;
+    /* opacity: 1; */
+}
+
+/* Finish the main */
+
+
+/* Start the Gallery */
+#gallery {
+    width: 100vw;
+    font-family: 'Heebo';
+    background-color: #fff;
+    text-align: center;
+}
+
+.galleryOrganization {
+    border-radius: 10px;
+}
+
+#project1,
+#project2,
+#project3,
+#project4,
+#project5,
+#project6,
+#project7,
+#project8,
+#project9 {
+    border: 1px solid #000;
+    width: 80vw;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+
+#flexTheGallery {
+    display: flex;
+    justify-content: center;
+}
+
+.h1Project,
+.h2Project,
+.h3Project,
+.h4Project,
+.h5Project,
+.h6Project,
+.h7Project,
+.h8Project,
+.h9Project {
+    font-family: 'Luxurious Roman';
+}
+
+.projectPageButtons {
+    width: 27vw;
+    margin-bottom: 7vw;
+    border-radius: 10px;
+    padding: 1.5vw;
+    border: 0.1px solid #00000045;
+}
+
+.imagesOfGallery {
+    width: 80vw;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+/* Finish the Gallery */
+
+/* start the footer */
+
+#footer {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+.labelFooter,
+#h1Footer,
+#h3Footer {
+    display: flex;
+    width: 90vw;
+    text-align: left;
+}
+
+.labelFooter {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.inputFooter {
+    width: 90vw;
+}
+
+#buttonFooter {
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+    height: 5vh;
+    width: 30vw;
+    background-color: #1ae0ec;
+    border-radius: 15px;
+    font-family: 'Heebo';
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Finish the footer */
+
+/* Start personal details  */
+
+#myPersonalLinks {
+    background-color: rgb(253, 253, 252);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+}
+
+.myPersonalLogos {
+    width: 7vw;
+    height: 4vh;
+}
+
+/* Finish personal details  */
+
+
+/* ======================================================================================================================================================================================================================================================================================================= */
+
+/* tablet size */
+
+@media (min-width:768px) {
+
+    .container {
+        border: 2px solid #f5f1f1;
+    }
+
+    /* General */
+    #h1Header,
+    #mainH1,
+    #h1gallery,
+    #h1Footer {
+        font-size: 2.8rem;
+    }
+
+    /* Finish General */
+
+    /* Navbar area */
+
+    #myName {
+        font-size: 1.2rem;
+    }
+
+    .aNavbar {
+        font-size: 1.2rem;
+    }
+
+
+    #myImage {
+        width: 8vw;
+        height: 5vh;
+        border-radius: 100px;
+    }
+
+    .aNavbar {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .liNavbar {
+        /* list-style-type: none; */
+        width: 100vw;
+        border: none;
+    }
+
+    #navbarContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    #guyProfile {
+        display: flex;
+        align-items: center;
+    }
+
+    #navbar {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #hamburgerForMobile {
+        display: none;
+    }
+
+    #ulNavbar {
+        margin-left: 5vw;
+        visibility: visible;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /* Finish Navbar */
+
+    /* Start Logos */
+    .logos {
+        width: 12vw;
+        height: 12vh;
+    }
+
+    /* Finish Logos */
+
+    /* Header */
+
+        .cvButton {
+        width: 30vw;
+        height: 5vh;
+        font-size: 1.2rem;
+    }
+    /* Finish Header */
+
+    /* Gallery  */
+
+    .h1Project,
+    .h2Project,
+    .h3Project,
+    .h4Project,
+    .h5Project,
+    .h6Project,
+    .h7Project,
+    .h8Project,
+    .h9Project {
+        font-size: 2.2em;
+    }
+
+    #h3gallery,
+    #h3Footer {
+        font-size: 1.3rem;
+    }
+
+    #h3gallery {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    #pHeader,
+    #pMain,
+    #pPhoto1,
+    #pPhoto2,
+    #pPhoto3,
+    #pPhoto4,
+    #pPhoto5,
+    #pPhoto6,
+    #pPhoto7,
+    #pPhoto8,
+    #pPhoto9 {
+        font-size: 1.3em;
+    }
+
+    .projectPageButtons {
+        width: 20vw;
+        width: 15vw;
+    }
+
+    /* Finish Gallery */
+
+    /* Footer */
+
+    #buttonFooter {
+        height: 5vh;
+        font-size: 1.2rem;
+    }
+
+    /* Finish Footer */
+
+}
+
+/* ========================================================================================================================================================================================================================================================================================================================================================================================================================================================================== */
+
+/* Desktop size */
+
+
+@media (min-width:1024px) {
+
+    /* General */
+
+    #h1Header,
+    #mainH1,
+    #h1gallery,
+    #h1Footer {
+        font-size: 2.5rem;
+    }
+
+    /* Finish General */
+
+    /* Start Navbar */
+    .aNavbar {
+        font-size: 1.2rem;
+    }
+
+    #myName {
+        font-size: 1.7rem;
+    }
+
+    #myImage {
+        width: 3vw;
+        height: 6vh;
+    }
+
+    /* Finish Navbar */
+
+    /* Start Logos */
+
+    .logos {
+        width: 10vw;
+        height: 15vh;
+    }
+
+    /* Finish Logos */
+
+    /* Start Main */
+
+    #pHeader,
+    #pMain {
+        font-size: 1.3rem;
+    }
+
+    .cvButton {
+        width: 20vw;
+        height: 8vh;
+        font-size: 1.2rem;
+    }
+
+
+    /* Finish Main */
+
+    /* Start Gallery */
+
+    .projectPageButtons {
+        padding-top: 1.2vh;
+        padding-bottom: 1.2vh;
+        width: 12vw;
+        height: 5vh;
+        background-color: #ece8e8;
+        font-size: 0.8rem;
+    }
+
+
+    #project1,
+    #project2,
+    #project3,
+    #project4,
+    #project5,
+    #project6,
+    #project7,
+    #project8,
+    #project9 {
+        border: 1px solid #000;
+        width: 25vw;
+        height: 75vh;
+        padding-bottom: 5vh;
+        margin-bottom: 10vh;
+        border-radius: 10px;
+    }
+
+    .h1Project,
+    .h2Project,
+    .h3Project,
+    .h4Project,
+    .h5Project,
+    .h6Project,
+    .h7Project,
+    .h8Project,
+    .h9Project {
+        margin-bottom: 0vh;
+        font-size: 1.5rem;
+    }
+
+    #pPhoto1,
+    #pPhoto2,
+    #pPhoto3,
+    #pPhoto4,
+    #pPhoto5,
+    #pPhoto6,
+    #pPhoto7,
+    #pPhoto8,
+    #pPhoto9 {
+        font-size: 1rem;
+        margin-top: 0vh;
+    }
+
+    #galleryGroupA,
+    #galleryGroupB,
+    #galleryGroupC {
+        display: flex;
+        justify-content: space-between;
+        gap: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    #image1,
+    #image2,
+    #image3,
+    #image4,
+    #image5,
+    #image6,
+    #image7,
+    #image8,
+    #image9 {
+        overflow: hidden;
+    }
+
+
+    .imagesOfGallery {
+        width: 25vw;
+        height: 30vh;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+    }
+
+    .imagesOfGallery:hover {
+        transform: scale(1.1);
+    }
+
+    /* Finish Gallery */
+
+
+    /* Start Footer */
+    .inputFooter {
+        height: 5vh;
+        width: 70vw;
+        float: left;
+    }
+
+
+    #messageInput {
+        height: 10vh;
+    }
+
+    #buttonFooter {
+        margin-top: 20vh;
+        margin-bottom: 3vh;
+        width: 10vw;
+        height: 7vh;
+        /* margin-right: 90vw; */
+    }
+
+    .inputFooter {
+        margin-bottom: 5vh;
+    }
+
+    .labelFooter {
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+    }
+
+    /* Finish Footer */
+
+    #myPersonalLinks {
+        background-color: rgb(253, 253, 252);
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1vh;
+    }
+
+    .myPersonalLogos {
+        width: 4vw;
+        height: 8vh;
+    }
+
+    /* Finish personal details  */
+}
